@@ -201,4 +201,5 @@ int main() {
         myfile << "\n";
     }
     myfile.close();
+    return 0;
 }
