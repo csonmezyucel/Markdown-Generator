@@ -1,16 +1,11 @@
 # Makefile for Markdown Generator by Cevat Sonmez Yucel
-
 all: MD clean
-CXX=clang++ $(CXXFLAGS)
-CXXFLAGS=-Wall # Enable all warnings
-DEBUG=-g
+CXX=clang++
 
 OBJECTS = MD.cpp main.cpp
 
 MD: $(OBJECTS)
-		$(CXX) $(DEBUG) $(OBJECTS) $(CXXFLAGS)
-
-
+		$(CXX) $(OBJECTS)
 
 .PHONY: clean
 clean:
